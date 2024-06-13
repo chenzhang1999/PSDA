@@ -12,20 +12,20 @@ async def run(playwright: Playwright) -> None:
     await page.get_by_label("Benutzername *").fill("Admin")
     await page.get_by_placeholder(" ").click()
     await page.get_by_placeholder(" ").fill("Admin")
-    await page.get_by_role("button", name="Anmelden").click()
+    await page.get_by_placeholder(" ").press("Enter")
     await page.get_by_text("Verzeichnis Gewässergüte", exact=True).click()
     await page.get_by_text("Verzeichnis Einzelsichten").click()
-    await page.get_by_role("link", name="Tabelle Messwert", exact=True).click()
-    
-
-    return page, context, browser
-
+    await page.goto("http://localhost:8080/cadenza/processingChain?repositoryItemGlobalId=ROOT.Gew%C3%A4sserg%C3%BCte.Einzelsichten.gewaesser%3AMst.Messstelle.sel&conditionValuesSetHash=B68D242&selector=ROOT.Gew%C3%A4sserg%C3%BCte.Einzelsichten.gewaesser%3AMst.Messstelle.sel&sourceOrderAsc=false&offset=0&limit=2147483647")
+    await page.close()
 
     # ---------------------
-    
-    
+    await context.close()
+    await browser.close()
 
 
-async def modified_main() -> None:
+async def main() -> None:
     async with async_playwright() as playwright:
         await run(playwright)
+
+
+asyncio.run(main())
