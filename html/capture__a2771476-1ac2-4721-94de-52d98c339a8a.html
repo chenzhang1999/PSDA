@@ -1,0 +1,231 @@
+<!DOCTYPE html><html lang="de" dir="ltr" class="" ua="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" style="--primary-color-rgb: 35,112,183; --primary-color-darken-15: hsl(209deg, 68%, 36.55%); --primary-color-darken-30: hsl(209deg, 68%, 30.099999999999998%);"><head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+  <title>
+  Login - disy Cadenza</title>
+
+  
+  <script>
+  Disy = {"customMessages":{},"registeredPostMessageWebApplications":{},"debug":false,"contextPath":"/cadenza","defaultFormats":{"defaultIntFormat":"#,##0","defaultDoubleFormat":"#,##0.00"},"themePath":"/cadenza/themes/default","timeZone":"Europe/Berlin","disabledUiFeatures":[],"language":"de","locale":"de-DE","clientSessionId":"","cadenzaSessionPollingInterval":45000,"currentUsername":"","cadenzaVersion":"v9.4.71","cookielessMode":true,"maxUploadFileSizeInBytes":104857600,"availableFeatures":["ACCESS_MANAGER","CREATE_ROUTING_REPORT","CREATE_WORKBOOK_REPORT","DATASOURCE_ARCGIS_REST","DATASOURCE_ELASTIC_SEARCH","DATASOURCE_WFS","GAZETTEER","GEOCODING","GEOCODING_STRUCTURED","GEOCODING_UNSTRUCTURED","GUEST_ACCESS","IMPORT_PRESETS","JSON_EXPORT","LOCATION_FINDER","MAP_PRINT","PROJECTS_ENABLED","REVERSE_GEOCODING","ROUTING","ROUTING_ISOCHRONES","TIMELINE","TIMELINE_IMPORT","TIMELINE_IMPORT_CLASSIC","WORKBOOK","ADD_LAYER_FROM_NAVIGATOR"]};
+</script>
+  <script src="/cadenza/themes/default/js/theme.js?_v=99d1d6b54bd2a5636754d29e9de15325bf49f35e0fae774d08cb0824167a6ce2"></script>
+<script>
+(() => {
+  const meta = document.createElement('meta');
+  meta.name = 'theme-color';
+  meta.content = Disy.theme['primary-color'] ?? '#2370b7'; // see THEME_DEFAULTS in theming-api.ts
+  document.head.append(meta);
+})();
+</script><meta name="theme-color" content="#2370b7">
+  <style>
+  @IMPORT url("/cadenza/css/jqueryUI/theme/base/jquery-ui.css?_v=32cb87bc543ae259b61a6a618947417f753515e83152c3e6b14ea846a366b0a9");
+  @IMPORT url("/cadenza/css/custom.css?_v=c03da9c09242ef0e52ccef082bff0d3903f72fc816142579466991b5f80047a7");
+  @IMPORT url("/cadenza/css/base.css?_v=6b395728987d716a2820433f323676f6c521706cc792b6cf7542bc6274a97a60");
+  @IMPORT url("/cadenza/css/navigator.css?_v=79501a9c2365b41c88d9ee692da659e30957fa31bb7928d38f64db1a17993310");
+  @IMPORT url("/cadenza/css/previewTypes.css?_v=692384b02ef44706ead6cdc8e36d9bc0ed7e1ba1434b971797f730873dbf733e");
+  @IMPORT url("/cadenza/css/table.css?_v=9587608cad9b388bbba554e26a8df4f7d9274f95173ae6179b5c50a8c7827f41");
+  @IMPORT url("/cadenza/css/dialog.css?_v=cae03ee52a0b8039e608b64b995706c3062df1d7b03e92b488c98e7c70d0ff3a");
+</style>
+  <style>.hide-everything * { visibility: hidden !important; }</style>
+<script>
+  document.documentElement.classList.add('hide-everything');
+
+  // Show/Unhide everything after the Theming API properties have been applied.
+  window.addEventListener('DOMContentLoaded', () => {
+    document.documentElement.classList.remove('hide-everything');
+  });
+</script>
+  <script>document.documentElement.setAttribute('ua', navigator.userAgent)</script>
+  <link href="/cadenza/manifest.webmanifest" rel="manifest">
+    <link href="/cadenza/bundles/base-render-blocking.v_101900b9e3e6e7f8778f.css" rel="stylesheet"><script src="/cadenza/bundles/runtime.bundle.v_cab20f8116ed55d91f85.js"></script><script src="/cadenza/bundles/npm.lodash-es4.17.21.bundle.v_d6050859736f241264cc.js"></script><script src="/cadenza/bundles/npm.jquery3.7.1.bundle.v_e25a22c4e117b5c23c3a.js"></script><script src="/cadenza/bundles/npm.mousetrap1.6.5.bundle.v_2855a6cdc4ab9098b6fc.js"></script><script src="/cadenza/bundles/vendors-node_modules_pnpm_construct-style-sheets-polyfill_3_1_0_patch_hash_pl6w3bojnxax2sutxl-63efa8.bundle.v_d71323ebfd7c6c2e3bb2.js"></script><script src="/cadenza/bundles/src_cadenza_utils_i18n_i18n_js.bundle.v_967aba144ca7e648c098.js"></script><script src="/cadenza/bundles/src_ui_dialog_modal_modal_ts-target_cadenza-icons_icons_warning_svg.bundle.v_1943f3d3d57fec82a9da.js"></script><script src="/cadenza/bundles/src_cadenza_api-client_api_ts.bundle.v_8acaea34b2f98d301645.js"></script><script src="/cadenza/bundles/base-render-blocking.bundle.v_fc58ca5cb56b38745c3b.js"></script><link href="/cadenza/bundles/base.v_8c1ac47988a6e8b5ef43.css" rel="stylesheet"><script defer="" src="/cadenza/bundles/src_ui_menu_menu_ts.bundle.v_41d302825965c1f0959b.js"></script><script defer="" src="/cadenza/bundles/src_cadenza_api-client_processing-param-util_ts-src_cadenza_conditions_event-types_ts-src_cad-4f4ee8.bundle.v_6418868db181feea8418.js"></script><script defer="" src="/cadenza/bundles/base.bundle.v_d661db76e63aa1e45275.js"></script>
+    <link href="/cadenza/bundles/login.v_21b637822a0e620dcb8b.css" rel="stylesheet"><script defer="" src="/cadenza/bundles/npm.element-internals-polyfill1.3.10.bundle.v_55611bf6a7005f31d0c7.js"></script><script defer="" src="/cadenza/bundles/src_ui_form-group_form-group_ts.bundle.v_8ae2290d5d2436d93189.js"></script><script defer="" src="/cadenza/bundles/login.bundle.v_966e1984b893b94b9170.js"></script>
+  <script>$(() => Disy.postEvent('error', { type: 'unauthorized' }))</script>
+
+  <meta name="apple-mobile-web-app-title" content="disy Cadenza">
+<meta name="application-name" content="disy Cadenza">
+<!-- Black-translucent does not work correctly, so either black or default -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<link rel="shortcut icon" type="image/x-icon" href="/cadenza/themes/default/images/favicon.ico?_v=ee87cf29ee31f53d49d6ffbe6ee2d279703e6e90148d111d0b74eff741fece6b">
+
+<link rel="icon" sizes="192x192" href="/cadenza/themes/default/images/app-icon-192x192.png?_v=ef53ea28e7575588387997d196cfac7a21418d0609cfb7300260a2f0d96d7b1e">
+<link rel="icon" sizes="512x512" href="/cadenza/themes/default/images/app-icon-512x512.png?_v=e56170ebf96c87b1bce9c3fc97e221626eb60a84cc123a74de4e1605adc1fb5f">
+
+<link rel="apple-touch-icon" sizes="120x120" href="/cadenza/themes/default/images/app-icon-120x120.png?_v=4401cff5bbeaa887da18775864c8203712adc6e5298220ce765d3ff573c22d0c">
+<link rel="apple-touch-icon" sizes="152x152" href="/cadenza/themes/default/images/app-icon-152x152.png?_v=6bc537f821a22f26f4a7ac57506e1654ba19c115c9e589244f55f851363b479e">
+<link rel="apple-touch-icon" sizes="167x167" href="/cadenza/themes/default/images/app-icon-167x167.png?_v=6b1ae838d4b8f6115aa897d46d8baa18133183a52293c61879ef162b46de0962">
+<link rel="apple-touch-icon" sizes="180x180" href="/cadenza/themes/default/images/app-icon-180x180.png?_v=2a320e1df2cd18c413760d126b970e452d28553cd2c03dc4de0fedd68294fee9">
+  <link rel="stylesheet" type="text/css" href="/cadenza/themes/default/css/customerGlobal.css?_v=1035b06c64fddc66175a5a0b5902eab11aa59725ea50b296bc4fe5d888288aea">
+</head>
+<body role="application" class="">
+
+  <noscript>
+      <link href="/cadenza/css/access.css?_v=1a161320751c776297a7818a3b92684f79ad11ddccf6a19e9743036d317c3164" rel="stylesheet" />
+
+  <div class="d-access">
+    <div class="d-access-main">
+            <script>document.querySelector('.d-access-main').classList.toggle('dark-bg', Boolean(Disy.theme['login-invert']))</script>
+
+        <link href="/cadenza/css/no-script.css?_v=17dbcfd9140756f96aa01955235dde2b2110c713e27688c00f1a2b001dc21ecc" rel="stylesheet" />
+
+  <div class="d-no-script-main-container">
+    <section class="d-no-script-message">
+      <div class="d-alert d-alert-warning">
+        <p class="title">Achtung!</p>
+        <p>Ihr Browser unterstützt kein JavaScript oder JavaScript wurde in Ihrem Browser deaktiviert.</p>
+        <p>Bitte verwenden Sie einen Browser, der JavaScript unterstützt, oder aktivieren Sie JavaScript in Ihrem Browser. Ohne aktiviertes JavaScript ist die Anwendung nicht nutzbar.</p>
+      </div>
+    </section>
+  </div>
+    </div>
+
+    <div class="d-access-aside">
+      <div class="d-access-aside--image-box">
+        <div class="cadenza__hero">
+  <div class="d-flex align-items-center">
+    <div class="welcome-logo--wrapper col-6">
+      <link href="/cadenza/themes/default/css/hero.css?_v=3c7d7ee70f1a02c08d03df570f4de4d0c34d9da7050bfd737472b70af1f5d86d" rel="stylesheet" />
+<div class="logo-container">
+  <!-- Using object instead of img in order to have the animation being played on every display,
+    which is not the case for regular images due to browser caching. -->
+  <object role="presentation" type="image/svg+xml" data="/cadenza/themes/default/images/hero/Logo_Cadenza_Spring2024.svg?_v=e7ad4765d6a1dd871d11727e4db8a345d2d3e14c49b2d8987be9f4cd71df9c53" width="455" height="240"></object>
+</div>
+<div class="network">
+  <img src="/cadenza/themes/default/images/hero/DISY-network-graphic.svg?_v=60ca975795e1beea4682d89d8d31303a84323acb272e5cdfe80697fa5f54f603" width="2050" height="2050" alt="Lines Image"/>
+</div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+  </noscript>
+
+  <div class="d-page ">
+    <header class="d-page--header"></header>
+
+      <d-sidebar role="complementary" id="navigator" class="navigator is-overlay is-animated d-sidebar" aria-hidden="true" tabindex="-1" style="display: none;">
+    <div class="d-navigator-repository" aria-live="polite"></div>
+    <div class="d-navigator-project" aria-live="polite"></div>
+    <script>$(disyCommons.initializeNavigation)</script>
+  </d-sidebar><div class="d-sidebar--backdrop"></div>
+
+        <main class="d-page--content" id="content">
+          <script type="module">
+    const { 'login-center': center, 'login-aside': aside } = Disy.theme;
+    document.body.classList.toggle('is-login-center', Boolean(center));
+    document.body.classList.toggle('hide-login-aside', Boolean(center || !aside));
+  </script>
+
+    <link href="/cadenza/css/access.css?_v=1a161320751c776297a7818a3b92684f79ad11ddccf6a19e9743036d317c3164" rel="stylesheet">
+
+  <div class="d-access">
+    <div class="d-access-main dark-bg">
+            <script>document.querySelector('.d-access-main').classList.toggle('dark-bg', Boolean(Disy.theme['login-invert']))</script>
+
+                  <form id="loginForm" action="/cadenza/login" method="post" class="d-login-form d-stack-v space-4 " autocomplete="off" accept-charset="UTF-8">
+        <input id="loginForm:savedPermalinkUrl" type="hidden" name="savedPermalinkUrl" value="" style="">
+
+        <section class="d-login-form--header">
+          <link rel="stylesheet" href="/cadenza/themes/default/css/loginFormHeader.css?_v=052a15fa6ad8763c499c5ceeaa197ca669a44573f73e7c53ce94345564ea3b34">
+<img class="d-logo" height="48" src="/cadenza/themes/default/images/cadenza-logo-white.svg?_v=63d4bbd7c069225bdeadde1de7179ad2ddd43e8dd2a412acf4d3877765b97095" alt="">
+<h1 class="d-login-heading">Login</h1>
+        </section>
+
+        
+                  <p class="h3">Bitte geben Sie Ihren Benutzernamen und Ihr Passwort ein.</p>
+
+          <form-group class="form-group form-group-flex is-required">
+            <label for="ad2pz7d3exqCtLQtkN9ay" id="ad2pz7d3exqCtLQtkN9ay-label">Benutzername<span class="form-group--required-indicator" aria-hidden="true"> *</span></label>
+            <input name="username" required="" autofocus="" class="form-control" id="ad2pz7d3exqCtLQtkN9ay" aria-labelledby="ad2pz7d3exqCtLQtkN9ay-label" aria-describedby="ad2pz7d3exqCtLQtkN9ay-alert ad2pz7d3exqCtLQtkN9ay-hint" style="">
+          </form-group>
+          <form-group class="form-group form-group-flex">
+            <label for="d8VU0pVJ4iYGMXPq294ST" id="d8VU0pVJ4iYGMXPq294ST-label">Passwort</label>
+            <d-password-input class="d-password-input">
+              
+            <input type="password" name="password" class="d-password-input--input form-control" placeholder=" " id="d8VU0pVJ4iYGMXPq294ST" aria-labelledby="d8VU0pVJ4iYGMXPq294ST-label" aria-describedby="d8VU0pVJ4iYGMXPq294ST-alert d8VU0pVJ4iYGMXPq294ST-hint" style=""><button class="button button-borderless button-xs d-password-input--reveal-button button-icon" tabindex="-1" type="button" title="Passwort anzeigen" aria-pressed="false" aria-label="Passwort anzeigen" aria-controls="d8VU0pVJ4iYGMXPq294ST"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" focusable="false" class="d-icon d-icon-bold" aria-hidden="true">
+  <path fill-rule="evenodd" d="M3.838 12c1.858 3.405 4.874 5.5 8.162 5.5 3.288 0 6.304-2.095 8.162-5.5C18.304 8.595 15.288 6.5 12 6.5c-3.288 0-6.304 2.095-8.162 5.5zm-1.902-.685C4.03 7.295 7.7 4.5 12 4.5s7.97 2.796 10.063 6.815c.224.43.224.94 0 1.37C19.971 16.705 16.301 19.5 12 19.5c-4.3 0-7.971-2.796-10.064-6.815l.887-.462-.887.462a1.483 1.483 0 0 1 0-1.37zM12 10.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM8.5 12a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" clip-rule="evenodd"></path>
+</svg></button></d-password-input>
+          </form-group>
+        
+                  <button type="submit" class="button button-primary">Anmelden</button>
+          <p class="d-login-form--login-method-separator">oder</p>
+        
+        
+                  <a href="/cadenza/" class="button button-primary">Ohne Anmeldung fortfahren</a>
+          <p class="d-login-form--login-method-separator">oder</p>
+        
+        <section class="d-login-form--footer">
+                  </section>
+
+        <form-validation hidden="">
+      
+        </form-validation></form></div>
+
+    <div class="d-access-aside">
+      <div class="d-access-aside--image-box">
+        <div class="cadenza__hero">
+  <div class="d-flex align-items-center">
+    <div class="welcome-logo--wrapper col-6">
+      <link href="/cadenza/themes/default/css/hero.css?_v=3c7d7ee70f1a02c08d03df570f4de4d0c34d9da7050bfd737472b70af1f5d86d" rel="stylesheet">
+<div class="logo-container">
+  <!-- Using object instead of img in order to have the animation being played on every display,
+    which is not the case for regular images due to browser caching. -->
+  <object role="presentation" type="image/svg+xml" data="/cadenza/themes/default/images/hero/Logo_Cadenza_Spring2024.svg?_v=e7ad4765d6a1dd871d11727e4db8a345d2d3e14c49b2d8987be9f4cd71df9c53" width="455" height="240"></object>
+</div>
+<div class="network">
+  <img src="/cadenza/themes/default/images/hero/DISY-network-graphic.svg?_v=60ca975795e1beea4682d89d8d31303a84323acb272e5cdfe80697fa5f54f603" width="2050" height="2050" alt="Lines Image">
+</div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+    </main>
+
+    <footer class="d-page--footer">
+              <link rel="stylesheet" href="/cadenza/themes/default/css/footer.css?_v=1e8338c236ed9182b8c7ea49ab5711a2bda95ceed5a76d4aa984cd226fbb4171">
+
+<div class="userSpecificFooter dark-bg d-stack-h space-2">
+  <div class="userSpecificFooterLeftPositioned">
+    <a href="https://www.disy.net/de/produkte/cadenza/datenanalyse-software/" target="_blank" class="userSpecificLink ellipsis hidden-xs">
+      disy Cadenza v9.4.71    </a>
+  </div>
+  <div class="userSpecificFooterMiddlePositioned">
+    <a href="https://www.disy.net" target="_blank" class="userSpecificLink ellipsis hidden-xs">
+      © Disy Informationssysteme GmbH
+    </a>
+  </div>
+  <div class="userSpecificFooterRightPositioned">
+    <a href="https://www.disy.net/de/impressum/" target="_blank" class="userSpecificLink ellipsis">
+      Über Disy
+    </a>
+  </div>
+</div>
+          </footer>
+  </div>
+
+    <script type="module">
+        document.querySelectorAll('.d-page--header, .d-page--footer').forEach(el => {
+      if (isBlank(el)) { el.innerHTML = ''; }
+    });
+
+    function isBlank (el) {
+      return (el.children.length === 0 && !el.textContent.trim());
+    }
+  </script>
+
+    <d-data id="d-pwa-config" hidden="">
+{
+  "offlinePageUrl": "/cadenza/offline",
+  "swUrl": "/cadenza/sw.js?_v=027fce96cb794ddfcdc94fd0e9f5a841a5c8d722e18625c00dd301289671555b",
+  "pollingUrl": "/cadenza/status"
+}
+</d-data>
+<link href="/cadenza/bundles/pwa.v_20e599ac8c25643e7da1.css" rel="stylesheet"><script defer="" src="/cadenza/bundles/pwa.bundle.v_7e1422ec76f6d0c72462.js"></script>  
+
+
+</body></html>
