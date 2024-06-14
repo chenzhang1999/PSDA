@@ -15,16 +15,16 @@ async def run(playwright: Playwright) -> None:
     await page.get_by_role("button", name="Anmelden").click()
     await page.get_by_label("Verzeichnis Automobile").get_by_label("Mehr Informationen (I)").click()
     await page.get_by_label("Schließen (ESC)").click()
-    
-
-    return page, context, browser
-
+    await page.close()
 
     # ---------------------
-    
-    
+    await context.close()
+    await browser.close()
 
 
-async def modified_main() -> None:
+async def main() -> None:
     async with async_playwright() as playwright:
         await run(playwright)
+
+
+asyncio.run(main())
