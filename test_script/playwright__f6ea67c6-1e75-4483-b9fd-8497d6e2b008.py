@@ -18,17 +18,17 @@ async def run(playwright: Playwright) -> None:
     async with page.expect_popup() as page1_info:
         await page.get_by_role("menuitem", name="Arbeitsmappe testen").click()
     page1 = await page1_info.value
-    
-    
-
-    return page1, context, browser
-
+    await page1.close()
+    await page.close()
 
     # ---------------------
-    
-    
+    await context.close()
+    await browser.close()
 
 
-async def modified_main() -> None:
+async def main() -> None:
     async with async_playwright() as playwright:
         await run(playwright)
+
+
+asyncio.run(main())
